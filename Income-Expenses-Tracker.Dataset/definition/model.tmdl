@@ -1,0 +1,21 @@
+model Model
+	culture: en-ZA
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-GB
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Projections","TransactionHistory","spreadsheet-location"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.126.1261.0 (24.02)
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table DateTableTemplate_3ed50451-6e3c-4595-b357-6a7b952706a9
+ref table Projections
+ref table TransactionHistory
+ref table LocalDateTable_6e246604-707a-4a13-86f9-502e451e0484
+

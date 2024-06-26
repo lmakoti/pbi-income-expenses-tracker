@@ -1,0 +1,9 @@
+relationship 7b58cee0-4990-4d84-8962-9e3e51319d5b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: TransactionHistory.Date
+	toColumn: LocalDateTable_6e246604-707a-4a13-86f9-502e451e0484.Date
+
+relationship e4d6d612-195f-4ec9-9c06-518b295f63f5
+	fromColumn: TransactionHistory.Category
+	toColumn: Projections.Category
+

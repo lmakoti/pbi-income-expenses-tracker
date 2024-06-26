@@ -1,0 +1,7 @@
+expression spreadsheet-location = "G:\My Drive\[01] Financials\[01] Personal Financials\" meta [IsParameterQuery=true, Type="Any", IsParameterQueryRequired=true]
+	lineageTag: 7f24c707-fc51-4b74-baa0-96ec906a41e9
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+

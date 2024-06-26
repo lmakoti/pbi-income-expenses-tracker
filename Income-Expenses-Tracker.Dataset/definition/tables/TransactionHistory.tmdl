@@ -1,0 +1,72 @@
+table TransactionHistory
+	lineageTag: e5d1ac70-d2e8-44a4-861b-741f99e6bcf6
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 21fc9d8f-e94e-461f-92e9-8a761ceb6b93
+		summarizeBy: none
+		sourceColumn: Date
+
+		variation Variation
+			isDefault
+			relationship: 7b58cee0-4990-4d84-8962-9e3e51319d5b
+			defaultHierarchy: LocalDateTable_6e246604-707a-4a13-86f9-502e451e0484.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Description
+		dataType: string
+		lineageTag: 748878c7-9c54-4691-acfc-0fcf849b2370
+		summarizeBy: none
+		sourceColumn: Description
+
+		annotation SummarizationSetBy = Automatic
+
+	column Transaction
+		dataType: double
+		formatString: "£"#,0.00;-"£"#,0.00;"£"#,0.00
+		lineageTag: 013551f0-9a2c-4b33-8777-e38ca7fe9aec
+		summarizeBy: sum
+		sourceColumn: Transaction
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column Category
+		dataType: string
+		lineageTag: 4c107399-18d0-4571-bcff-ff0ac5d71a40
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	partition TransactionHistory = m
+		mode: import
+		source = ```
+				let
+				    Source = Csv.Document(File.Contents(#"spreadsheet-location" & "TransactionHistory.csv"),[Delimiter=",", Columns=3, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type date}, {"Column2", type text}, {"Column3", type number}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"Column1", "Date"}, {"Column2", "Description"}, {"Column3", "Transaction"}}),
+				    #"Uppercased Text" = Table.TransformColumns(#"Renamed Columns",{{"Description", Text.Upper, type text}}),
+				    #"Added Conditional Column" = Table.AddColumn(#"Uppercased Text", "Category", each if List.ContainsAny(Text.Split([Description], " "), {"RENT", "COUNCIL TAX", "WATER BILL", "ELECTRICITY", "GAS BILL", "SEWAGE", "TV LICENSE", "BROADBAND", "SKY", "BRITISH GAS"}) then "Rent-Utilities" 
+				    else if List.ContainsAny(Text.Split([Description], " "), {"AMAZON", "ASOS", "JOHN LEWIS", "TESCO DIRECT", "ARGOS", "CURRYS", "EBAY", "ZARA", "IKEA", "BOOTS"}) then "Shopping" 
+				    else if List.ContainsAny(Text.Split([Description], " "), {"JUST EAT", "DELIVEROO", "UBER EATS", "DOMINO'S", "MCDONALD'S", "KFC", "NANDO'S", "PIZZA HUT", "BURGER KING", "PRET"}) then "Takeout" 
+				    else if List.ContainsAny(Text.Split([Description], " "), {"HARGREAVES LANSDOWN", "VANGUARD", "AJ BELL", "FIDELITY", "CHARLES STANLEY", "INTERACTIVE INVESTOR", "BARCLAYS SMART INVESTOR", "SAXO MARKETS", "HALIFAX SHARE DEALING", "TRADING 212"}) then "Investment" 
+				    else if List.ContainsAny(Text.Split([Description], " "), {"TRANSPORT FOR LONDON", "UBER", "OYSTER", "NATIONAL RAIL", "STAGECOACH", "FIRST BUS", "ARRIVA", "MEGABUS", "NATIONAL EXPRESS", "VIRGIN TRAINS"}) then "Transport" 
+				    else if List.ContainsAny(Text.Split([Description], " "), {"NETFLIX", "SPOTIFY", "AMAZON PRIME", "DISNEY+", "HULU", "NOW TV", "SKY", "APPLE MUSIC", "ADOBE", "MICROSOFT 365"}) then "Subscriptions" 
+				    else if List.ContainsAny(Text.Split([Description], " "), {"TESCO", "SAINSBURY'S", "ASDA", "MORRISONS", "LIDL", "ALDI", "WAITROSE", "CO-OP", "ICELAND", "M&S"}) then "Groceries" 
+				    else "Other"),
+				    #"Calculated Absolute Value" = Table.TransformColumns(#"Added Conditional Column",{{"Transaction", Number.Abs, type number}}),
+				    #"Sorted Rows" = Table.Sort(#"Calculated Absolute Value",{{"Category", Order.Descending}})
+				in
+				    #"Sorted Rows"
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

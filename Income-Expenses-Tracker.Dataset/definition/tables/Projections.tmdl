@@ -1,0 +1,32 @@
+table Projections
+	lineageTag: 656ccbf1-7cd4-4583-85b3-7f1f5e78f36a
+
+	column Category
+		dataType: string
+		lineageTag: 523abf54-a751-4b01-9777-a655129aa9f7
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Estimate
+		dataType: string
+		lineageTag: 0de95a8c-a31e-45a7-9879-b6d9f2ad1ba0
+		summarizeBy: none
+		sourceColumn: Estimate
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Projections = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("TY7BDoIwDIbfZWdMhkJ8ARP1ZCJ4WjjA0kijrEtXTHx7BwPi8fv692+NUSfoRGWq1Fo1mVFnJgv8jeawmAsNEHFfJrw6m0Shj6v5QJAB3H/PTXrgyInucbh7CL5REELU+ZqrevIe3XOLVmMXLKMXJBfmwlnX7QtonC7ky2bNLbrpsWJjFzyxpKrmBw==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Category = _t, Estimate = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Category", type text}, {"Estimate", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

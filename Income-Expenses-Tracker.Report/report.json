@@ -1,0 +1,349 @@
+{
+  "config": "{\"version\":\"5.51\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU11\",\"version\":\"5.50\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "filters": "[{\"name\":\"Filter33c99d0b05aa8416604e\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"TransactionHistory\"}},\"Property\":\"Description\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"TransactionHistory\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Description\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'401663 40454702 INTERNET TRANSFER TFR'\"}}],[{\"Literal\":{\"Value\":\"'A2MF5TMJ RBV19024HT4L66IO LEHLOHONOLO MAKOTI DR'\"}}],[{\"Literal\":{\"Value\":\"'AMERICAN EXP 3773 PB1081******07756 OBP'\"}}],[{\"Literal\":{\"Value\":\"'COM SEC CR'\"}}],[{\"Literal\":{\"Value\":\"'CS NO 1 CURRENT A/ CR'\"}}],[{\"Literal\":{\"Value\":\"'CS NO 2 CURR CR'\"}}],[{\"Literal\":{\"Value\":\"'FREDRICK SIGALLA HSBC BP'\"}}],[{\"Literal\":{\"Value\":\"'FREDRICK SIGALLA REVOLUT BP'\"}}],[{\"Literal\":{\"Value\":\"'FREDRICK SIGALLA SENT FROM REVOLUT CR'\"}}],[{\"Literal\":{\"Value\":\"'LOAN REPAYMENT A/C 401191-76029825 DR'\"}}],[{\"Literal\":{\"Value\":\"'MAKOTI L    *OBS SAVINGS HSBC SO'\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}]",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU11",
+            "path": "BaseThemes/CY23SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "wallet5303724935873977.png",
+            "path": "wallet5303724935873977.png",
+            "type": 100
+          },
+          {
+            "name": "wallet_income23220764617203282.png",
+            "path": "wallet_income23220764617203282.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"415L\"}}}}}]}}",
+      "displayName": "Main Page",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"00859e47a74a50d6b76a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":40,\"y\":119.99999999999999,\"z\":13000,\"width\":48.00000000000001,\"height\":48.00000000000001,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"wallet_income23220764617203282.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 48.00,
+          "width": 48.00,
+          "x": 40.00,
+          "y": 120.00,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"0f5b1ec3c5c830e713d0\",\"layouts\":[{\"id\":0,\"position\":{\"height\":40.851063829787236,\"width\":329.726443768997,\"x\":0,\"y\":20.425531914893615,\"z\":1000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Makoti (HSBC and Lloyds)\",\"textStyle\":{\"fontFamily\":\"DIN\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"parentGroupName\":\"934903acb56dc8100cc9\"}",
+          "filters": "[]",
+          "height": 40.85,
+          "width": 329.73,
+          "x": 0.00,
+          "y": 20.43,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"14ad527b6ccd9cb6aee9\",\"layouts\":[{\"id\":0,\"position\":{\"height\":40.851063829787236,\"width\":184,\"x\":96.00000000000001,\"y\":119.99999999999999,\"z\":2000,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Income Flow\",\"textStyle\":{\"fontFamily\":\"DIN\",\"fontSize\":\"16pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 40.85,
+          "width": 184.00,
+          "x": 96.00,
+          "y": 120.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"1cb8790ae48060bd8e57\",\"layouts\":[{\"id\":0,\"position\":{\"x\":293.61423180821436,\"y\":117.460074149666,\"z\":10000,\"width\":47.65957446808511,\"height\":51.550151975683896,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"wallet5303724935873977.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 51.55,
+          "width": 47.66,
+          "x": 293.61,
+          "y": 117.46,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"3ecfd7483e58406105ed\",\"layouts\":[{\"id\":0,\"position\":{\"x\":272,\"y\":104,\"z\":1000,\"width\":984,\"height\":296,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"shadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"shadowPositionPreset\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 296.00,
+          "width": 984.00,
+          "x": 272.00,
+          "y": 104.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"40b841056c05b1d1e0d8\",\"layouts\":[{\"id\":0,\"position\":{\"height\":40.851063829787236,\"width\":329.726443768997,\"x\":0,\"y\":20.425531914893625,\"z\":1000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Analysed on a Specified Cut-Off Period\",\"textStyle\":{\"fontFamily\":\"DIN\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"parentGroupName\":\"b2b4ab9d541e1657a505\"}",
+          "filters": "[]",
+          "height": 40.85,
+          "width": 329.73,
+          "x": 0.00,
+          "y": 20.43,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"4d41aabe098139a52bc0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":288,\"y\":152,\"z\":9000,\"width\":944,\"height\":56,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.6}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"0.5D\"}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 56.00,
+          "width": 944.00,
+          "x": 288.00,
+          "y": 152.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"525376a2d506e3802401\",\"layouts\":[{\"id\":0,\"position\":{\"x\":890.9422492401217,\"y\":7.781155015197569,\"z\":6000,\"width\":364.74164133738606,\"height\":100.1823708206687,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"TransactionHistory.Date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"TransactionHistory\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Date\"},\"Name\":\"TransactionHistory.Date\",\"NativeReferenceName\":\"Financial Period\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Date\"}}}]},\"columnProperties\":{\"TransactionHistory.Date\":{\"displayName\":\"Financial Period\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2024-02-23T00:00:00'\"}}},\"endDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2024-02-28T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"TransactionHistory\",\"Type\":0}],\"Where\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2024-02-23T00:00:00'\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2024-02-29T00:00:00'\"}}}}}}}]}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 100.18,
+          "width": 364.74,
+          "x": 890.94,
+          "y": 7.78,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"55c8d8c55e0820998166\",\"layouts\":[{\"id\":0,\"position\":{\"x\":259.2552225249773,\"y\":408.0653950953679,\"z\":5000,\"width\":1007.9564032697548,\"height\":288.3197093551317,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"TransactionHistory.Category\"},{\"queryRef\":\"TransactionHistory.Description\"},{\"queryRef\":\"Sum(TransactionHistory.Transaction)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"TransactionHistory\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Category\"},\"Name\":\"TransactionHistory.Category\",\"NativeReferenceName\":\"Category1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Description\"},\"Name\":\"TransactionHistory.Description\",\"NativeReferenceName\":\"Description1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Transaction\"},\"Name\":\"Sum(TransactionHistory.Transaction)\",\"NativeReferenceName\":\"Transaction\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Transaction\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnHeaders\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#009D9D'\"}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"values\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}}}}],\"grid\":[{\"properties\":{\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"692.824322416508D\"}}}},\"selector\":{\"metadata\":\"TransactionHistory.Description\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"158.9342709044056D\"}}}},\"selector\":{\"metadata\":\"Sum(TransactionHistory.Transaction)\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"116.63740988315195D\"}}}},\"selector\":{\"metadata\":\"TransactionHistory.Category\"}}],\"columnFormatting\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Left'\"}}}},\"selector\":{\"metadata\":\"Sum(TransactionHistory.Transaction)\"}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'BoldHeader'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 288.32,
+          "width": 1007.96,
+          "x": 259.26,
+          "y": 408.07,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"566f0fe1ce68d2e36c71\",\"layouts\":[{\"id\":0,\"position\":{\"x\":296,\"y\":184,\"z\":3000,\"width\":944,\"height\":200,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"TransactionHistory.Category\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(TransactionHistory.Transaction)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"TransactionHistory\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Category\"},\"Name\":\"TransactionHistory.Category\",\"NativeReferenceName\":\"Category1\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Transaction\"}},\"Function\":0},\"Name\":\"Sum(TransactionHistory.Transaction)\",\"NativeReferenceName\":\"Sum of Transaction\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Transaction\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#009D9D'\"}}}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}}}}],\"valueAxis\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 200.00,
+          "width": 944.00,
+          "x": 296.00,
+          "y": 184.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"78ec75b19d9d595919a0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1104,\"y\":96.00000000000001,\"z\":11000,\"width\":176,\"height\":88,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"Sum(TransactionHistory.Transaction)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"TransactionHistory\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Transaction\"}},\"Function\":0},\"Name\":\"Sum(TransactionHistory.Transaction)\",\"NativeReferenceName\":\"Sum of Transaction\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Transaction\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"value\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}},\"selector\":{\"metadata\":\"Sum(TransactionHistory.Transaction)\"}}],\"fillCustom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}],\"label\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Expenses'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}},\"selector\":{\"metadata\":\"Sum(TransactionHistory.Transaction)\"}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 88.00,
+          "width": 176.00,
+          "x": 1104.00,
+          "y": 96.00,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"934903acb56dc8100cc9\",\"layouts\":[{\"id\":0,\"position\":{\"height\":61.27659574468086,\"width\":329.726443768997,\"x\":32.09726443768997,\"y\":25.261398176291802,\"z\":7000,\"tabOrder\":4000}}],\"singleVisualGroup\":{\"displayName\":\"Group 1\",\"groupMode\":0}}",
+          "height": 61.28,
+          "width": 329.73,
+          "x": 32.10,
+          "y": 25.26,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"976e2eb86a062727033e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":32,\"y\":104,\"z\":0,\"width\":232.00000000000003,\"height\":296,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"shadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"shadowPositionPreset\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 296.00,
+          "width": 232.00,
+          "x": 32.00,
+          "y": 104.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"9f8f35d6d906248489e0\",\"layouts\":[{\"id\":0,\"position\":{\"height\":40.851063829787236,\"width\":329.726443768997,\"x\":0,\"y\":0,\"z\":0,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Income and Expenditure Statement\",\"textStyle\":{\"fontFamily\":\"DIN\",\"fontSize\":\"16pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"parentGroupName\":\"934903acb56dc8100cc9\"}",
+          "filters": "[]",
+          "height": 40.85,
+          "width": 329.73,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"b2b4ab9d541e1657a505\",\"layouts\":[{\"id\":0,\"position\":{\"x\":344,\"y\":119.99999999999999,\"z\":8000,\"width\":328,\"height\":64,\"tabOrder\":12000}}],\"singleVisualGroup\":{\"displayName\":\"Group 1\",\"groupMode\":0}}",
+          "height": 64.00,
+          "width": 328.00,
+          "x": 344.00,
+          "y": 120.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"b4746100619b84e11590\",\"layouts\":[{\"id\":0,\"position\":{\"x\":96.00000000000001,\"y\":136,\"z\":4000,\"width\":176,\"height\":48.00000000000001,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Monthly Renumeration\",\"textStyle\":{\"fontFamily\":\"DIN\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 48.00,
+          "width": 176.00,
+          "x": 96.00,
+          "y": 136.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"b80a84b60847ed6373d3\",\"layouts\":[{\"id\":0,\"position\":{\"height\":40.851063829787236,\"width\":329.726443768997,\"x\":0,\"y\":0,\"z\":0,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Expense Flow\",\"textStyle\":{\"fontFamily\":\"DIN\",\"fontSize\":\"16pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"parentGroupName\":\"b2b4ab9d541e1657a505\"}",
+          "filters": "[]",
+          "height": 40.85,
+          "width": 329.73,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"d9feec99196d19b84f06\",\"layouts\":[{\"id\":0,\"position\":{\"x\":32,\"y\":408.00000000000006,\"z\":14000,\"width\":232,\"height\":288,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"TransactionHistory.Category\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"TransactionHistory\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Category\"},\"Name\":\"TransactionHistory.Category\",\"NativeReferenceName\":\"Category1\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnHeaders\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#009D9D'\"}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"values\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}}}}],\"grid\":[{\"properties\":{\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"columnWidth\":[{\"properties\":{},\"selector\":{\"metadata\":\"TransactionHistory.Category\"}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'BoldHeader'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 288.00,
+          "width": 232.00,
+          "x": 32.00,
+          "y": 408.00,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"dc8d73710ed038d12818\",\"layouts\":[{\"id\":0,\"position\":{\"x\":40,\"y\":152,\"z\":12000,\"width\":216,\"height\":56,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.6}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"0.5D\"}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 56.00,
+          "width": 216.00,
+          "x": 40.00,
+          "y": 152.00,
+          "z": 12000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"420L\"}}}}}]},\"visibility\":1}",
+      "displayName": "Calculations Exp",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectionff1af7298cb6a12b3403",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0c5d9d5a7ddc6b034b16\",\"layouts\":[{\"id\":0,\"position\":{\"x\":99.1823708206687,\"y\":109.90881458966567,\"z\":6000,\"width\":329.726443768997,\"height\":61.27659574468085,\"tabOrder\":8000}}],\"singleVisualGroup\":{\"displayName\":\"Group 1\",\"groupMode\":0}}",
+          "height": 61.28,
+          "width": 329.73,
+          "x": 99.18,
+          "y": 109.91,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"31bad6742350d04a601e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":48.35820895522388,\"y\":171.04477611940297,\"z\":1000,\"width\":1191.9402985074626,\"height\":257.910447761194,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"TransactionHistory.Category\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(TransactionHistory.Transaction)\"},{\"queryRef\":\"select\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"TransactionHistory\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Category\"},\"Name\":\"TransactionHistory.Category\",\"NativeReferenceName\":\"Category1\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Transaction\"}},\"Function\":0},\"Name\":\"Sum(TransactionHistory.Transaction)\",\"NativeReferenceName\":\"Transaction\"},{\"NativeVisualCalculation\":{\"Language\":\"dax\",\"Expression\":\"ABS([Transaction] - PREVIOUS([Transaction]))\",\"Name\":\"PrevMonth\"},\"Name\":\"select\",\"NativeReferenceName\":\"PrevMonth\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Transaction\"}},\"Function\":0}}}]},\"autoSelectVisualType\":false,\"columnProperties\":{\"Sum(TransactionHistory.Transaction)\":{\"displayName\":\"Transaction\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#009D9D'\"}}}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}}}}],\"valueAxis\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 257.91,
+          "width": 1191.94,
+          "x": 48.36,
+          "y": 171.04,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"554a92c4e1295750ae4d\",\"layouts\":[{\"id\":0,\"position\":{\"height\":40.851063829787236,\"width\":329.726443768997,\"x\":0,\"y\":0,\"z\":0,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Expense Flow\",\"textStyle\":{\"fontFamily\":\"DIN\",\"fontSize\":\"16pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"parentGroupName\":\"0c5d9d5a7ddc6b034b16\"}",
+          "filters": "[]",
+          "height": 40.85,
+          "width": 329.73,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"6601e070820c15897d48\",\"layouts\":[{\"id\":0,\"position\":{\"height\":61.27659574468086,\"width\":329.726443768997,\"x\":32.09726443768997,\"y\":25.261398176291802,\"z\":5000,\"tabOrder\":5000}}],\"singleVisualGroup\":{\"displayName\":\"Group 1\",\"groupMode\":0}}",
+          "height": 61.28,
+          "width": 329.73,
+          "x": 32.10,
+          "y": 25.26,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"663f02b03bd6e0280aac\",\"layouts\":[{\"id\":0,\"position\":{\"height\":40.851063829787236,\"width\":329.726443768997,\"x\":0,\"y\":0,\"z\":0,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Income and Expenditure Statement\",\"textStyle\":{\"fontFamily\":\"DIN\",\"fontSize\":\"16pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"parentGroupName\":\"6601e070820c15897d48\"}",
+          "filters": "[]",
+          "height": 40.85,
+          "width": 329.73,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"68ec9304c7ed39581663\",\"layouts\":[{\"id\":0,\"position\":{\"x\":697.6119402985074,\"y\":449.55223880597015,\"z\":3000,\"width\":558.8059701492538,\"height\":241.7910447761194,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"TransactionHistory.Category\",\"active\":true},{\"queryRef\":\"TransactionHistory.Description\"}],\"Y\":[{\"queryRef\":\"Sum(TransactionHistory.Transaction)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"TransactionHistory\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Category\"},\"Name\":\"TransactionHistory.Category\",\"NativeReferenceName\":\"Category1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Description\"},\"Name\":\"TransactionHistory.Description\",\"NativeReferenceName\":\"Description1\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Transaction\"}},\"Function\":0},\"Name\":\"Sum(TransactionHistory.Transaction)\",\"NativeReferenceName\":\"Sum of Transaction\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Transaction\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#009D9D'\"}}}}}}}],\"valueAxis\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}}}}],\"categoryAxis\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}},\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"39L\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Income Flow'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 241.79,
+          "width": 558.81,
+          "x": 697.61,
+          "y": 449.55,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"7a036a70e1605dc064db\",\"layouts\":[{\"id\":0,\"position\":{\"x\":890.9422492401217,\"y\":7.781155015197569,\"z\":4000,\"width\":364.74164133738606,\"height\":100.1823708206687,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"TransactionHistory.Date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"TransactionHistory\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Date\"},\"Name\":\"TransactionHistory.Date\",\"NativeReferenceName\":\"Financial Period\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Date\"}}}]},\"columnProperties\":{\"TransactionHistory.Date\":{\"displayName\":\"Financial Period\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2024-01-22T00:00:00'\"}}},\"endDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2024-02-28T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"TransactionHistory\",\"Type\":0}],\"Where\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2024-01-22T00:00:00'\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2024-02-29T00:00:00'\"}}}}}}}]}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 100.18,
+          "width": 364.74,
+          "x": 890.94,
+          "y": 7.78,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"a2e7fba528e8a74e4904\",\"layouts\":[{\"id\":0,\"position\":{\"x\":32.23880597014925,\"y\":102.08955223880596,\"z\":0,\"width\":1223.2835820895523,\"height\":338.5074626865672,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"shadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"shadowPositionPreset\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 338.51,
+          "width": 1223.28,
+          "x": 32.24,
+          "y": 102.09,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"adb51f220da4016a05b3\",\"layouts\":[{\"id\":0,\"position\":{\"height\":40.851063829787236,\"width\":329.726443768997,\"x\":0,\"y\":20.425531914893625,\"z\":1000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Analysed on a Specified Cut-Off Period\",\"textStyle\":{\"fontFamily\":\"DIN\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"parentGroupName\":\"0c5d9d5a7ddc6b034b16\"}",
+          "filters": "[]",
+          "height": 40.85,
+          "width": 329.73,
+          "x": 0.00,
+          "y": 20.43,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"c80e1c8d45252d2ad4ce\",\"layouts\":[{\"id\":0,\"position\":{\"x\":32.23880597014925,\"y\":449.55223880597015,\"z\":2000,\"width\":647.4626865671642,\"height\":255.22388059701493,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"TransactionHistory.Category\"},{\"queryRef\":\"TransactionHistory.Description\"},{\"queryRef\":\"Sum(TransactionHistory.Transaction)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"TransactionHistory\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Category\"},\"Name\":\"TransactionHistory.Category\",\"NativeReferenceName\":\"Category1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Description\"},\"Name\":\"TransactionHistory.Description\",\"NativeReferenceName\":\"Description1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Transaction\"},\"Name\":\"Sum(TransactionHistory.Transaction)\",\"NativeReferenceName\":\"Transaction\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Transaction\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnHeaders\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#009D9D'\"}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"values\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}}}}],\"grid\":[{\"properties\":{\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"366.1987412662482D\"}}}},\"selector\":{\"metadata\":\"TransactionHistory.Description\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"155.264143067323D\"}}}},\"selector\":{\"metadata\":\"Sum(TransactionHistory.Transaction)\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"90.2340399869019D\"}}}},\"selector\":{\"metadata\":\"TransactionHistory.Category\"}}],\"columnFormatting\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Left'\"}}}},\"selector\":{\"metadata\":\"Sum(TransactionHistory.Transaction)\"}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'BoldHeader'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 255.22,
+          "width": 647.46,
+          "x": 32.24,
+          "y": 449.55,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"d6b2ab0dbbe379580618\",\"layouts\":[{\"id\":0,\"position\":{\"height\":40.851063829787236,\"width\":329.726443768997,\"x\":0,\"y\":20.425531914893615,\"z\":1000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Makoti (HSBC and Lloyds)\",\"textStyle\":{\"fontFamily\":\"DIN\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"parentGroupName\":\"6601e070820c15897d48\"}",
+          "filters": "[]",
+          "height": 40.85,
+          "width": 329.73,
+          "x": 0.00,
+          "y": 20.43,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"df6ec43727469b00052d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":46.56716417910447,\"y\":110.14925373134328,\"z\":8000,\"width\":47.46268656716418,\"height\":49.25373134328358,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"wallet5303724935873977.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 49.25,
+          "width": 47.46,
+          "x": 46.57,
+          "y": 110.15,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"dfdad47ccc61cb0bbd06\",\"layouts\":[{\"id\":0,\"position\":{\"x\":47.65957446808511,\"y\":133.25227963525836,\"z\":7000,\"width\":1192.4620060790273,\"height\":61.276595744680854,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.6}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"0.5D\"}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 61.28,
+          "width": 1192.46,
+          "x": 47.66,
+          "y": 133.25,
+          "z": 7000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
